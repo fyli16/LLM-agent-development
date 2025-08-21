@@ -1,4 +1,20 @@
 from openai import OpenAI
+
+# check openai version
+# import openai 
+# from importlib.metadata import version
+# version('openai')
+# alternatively, run the following in terminal
+# pip show openai
+
+# load OPENAI_API_KEY
+# method 1: export OPENAI_API_KEY in terminal
+# method 2: save key in .env and load it as follows
+# from dotenv import load_dotenv
+# load_dotenv()
+# import os
+# API_KEY = os.getenv("OPENAI_API_KEY")
+
 client = OpenAI()
 
 result = client.chat.completions.create(
